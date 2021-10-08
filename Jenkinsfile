@@ -9,7 +9,8 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh './jenkins/scripts/build.sh'
+        sh '''yarn config set registry \'https://registry.npm.taobao.org\'
+yarn'''
       }
     }
 
