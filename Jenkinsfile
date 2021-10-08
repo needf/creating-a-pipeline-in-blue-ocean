@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'sudo ./jenkins/scripts/build.sh'
+        sh './jenkins/scripts/build.sh'
       }
     }
 
